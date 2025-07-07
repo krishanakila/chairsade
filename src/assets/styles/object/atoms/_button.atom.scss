@@ -1,0 +1,37 @@
+// All the atomic level code goes here. like: buttons, breadcrumb, input, chip
+@use '../../settings/color.settings' as *;
+@use '../../settings/font.settings' as *;
+
+.primary-btn{
+  color: $color-green-10;
+  font-weight: $base-font-weight--semi-bold;
+  font-size: $base-font--medium;
+  border-radius: 8px;
+  border: 1px solid $color-gray;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  transition: all 0.3s ease; 
+   
+  &:hover{
+    border: 1px solid $color-green-10;
+  }
+  
+  &--mini{
+    height: 34px;
+  }
+}
+
+.squre-btn{
+  &--mini{
+    border-radius: 8px;
+    border: 1px solid $color-gray;
+    transition: all 0.3s ease; 
+   
+  &:hover{
+    border: 1px solid $color-green-10;
+  }
+  }
+}

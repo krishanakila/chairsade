@@ -1,0 +1,31 @@
+// Header container code goes here.
+
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.header{
+  background-color: $color-white;
+}
+
+.header-secondary{
+  min-height: 60px;
+  margin: 0 8px 0 20px;
+  &__tab{
+    button{
+      font-size: $base-font--large;
+      font-weight: $base-font-weight--normal;
+      border-bottom-width: 2px;
+      border-bottom: 2px solid transparent;
+      padding: 15px 0;
+      
+       &[aria-selected="true"]{
+         color: $color-green-20;
+         border-bottom: 2px solid $color-green-20;
+         
+      }
+      &[aria-selected="false"]{
+         color: $color-black-20;
+      }
+    }
+  }
+}

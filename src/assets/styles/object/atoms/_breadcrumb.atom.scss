@@ -1,0 +1,9 @@
+// All the atomic level code goes here. like: buttons, breadcrumb, input, chip
+@use '../../settings/color.settings' as *;
+
+.breadcrumb{
+    height: 44px;
+    border-bottom: 1px solid $color-primary;
+    color: $color-gray-30;
+    font-size: 0.75rem;
+}

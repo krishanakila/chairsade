@@ -1,0 +1,53 @@
+// Timeline (Right Sidebar) code goes here.
+
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.timeline{
+ background-color: $color-white;
+  &__header{
+    position: relative;
+  }
+
+  &__header-title{
+    font-size: $base-font--medium;
+    color: $color-black-10;
+    font-weight: $base-font-weight--semi-bold;
+    border-bottom: 1px solid $color-primary;
+    min-height: 60px;
+  }
+  &__time{
+    font-size: $base-font--x-small;
+    color: $color-gray-10;
+    font-weight: $base-font-weight--normal;
+    line-height: 1;
+    
+  }
+  &__title{
+    font-size: $base-font--small;
+    color: $color-black-20;
+    font-weight: $base-font-weight--normal;
+    line-height: 1.2;
+  }
+  &__des{
+    font-size: $base-font--x-small;
+    color: $color-gray-20;
+    font-weight: $base-font-weight--normal;
+    line-height: 1.2;
+
+  }
+  &__email{
+    font-size: $base-font--x-small;
+    color: $color-gray-20;
+    font-weight: $base-font-weight--normal;
+    line-height: 1.2;
+  }
+  &__seperator-line{
+   border-top: 1.5px dashed $color-gray-10;
+  }
+  &__seperator-text{
+    color: $color-secondary;
+    font-size: $base-font--small;
+    font-weight: $base-font-weight--normal;
+  }
+}

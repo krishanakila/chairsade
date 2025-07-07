@@ -1,0 +1,30 @@
+// All the generic typo codes goes here.
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.typo-12{
+  font-size: $base-font--x-small;
+  font-weight: $base-font-weight--normal;
+  color: $color-gray-40;
+}
+
+.typo-14{
+  font-size: $base-font--small;
+  font-weight: $base-font-weight--semi-bold;
+  color: $color-black-20;
+  &--normal{
+    font-weight: $base-font-weight--normal;
+    color: $color-black-10
+  }
+}
+
+.typo-16{
+  font-size: $base-font--medium;
+}
+
+.typo-32{
+  font-family: $font-family--primary;
+  font-size: $base-font-size--x-huge;
+  font-weight: $base-font-weight--strong;
+  color: $color-black-20;
+}

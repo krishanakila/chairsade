@@ -1,0 +1,39 @@
+/* Added Global Style Files Here and Import Other Style Files */
+
+
+// SETTINGS Global Files
+@use 'settings/color.settings' as *;
+@use 'settings/font.settings' as *;
+
+// TOOLS Global Files
+//@import "../scss/tools/mixins/browser-hacks.mixins";
+
+// GENERIC Global Files
+@use './generic/typography.generic' as *;
+
+// OBJECTS --atoms
+@use './object/atoms/breadcrumb.atom' as *;
+@use './object/atoms/button.atom' as *;
+@use './object/atoms/input.atom' as *;
+@use './object/atoms/chip.atom' as *;
+
+//COMPONENTS Global Files
+@use './components/notes.comp' as *;
+@use './components/nav-bar.comp' as *;
+@use './components/timeline.comp' as *;
+@use './components/header.comp' as *;
+
+//Pages Files
+@use './pages/dashboard.pages' as *;
+
+// UTILITIES Global Files
+//@import '../scss/utilities/spacing.utils';
+
+body {
+  font-family: $font-family--primary;
+  background-color: $color-primary;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

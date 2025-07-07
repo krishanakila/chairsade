@@ -1,0 +1,63 @@
+// Sidebar code goes here.
+
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.nav-bar{
+  &__item{
+   a,button{
+    color: $color-white;
+    font-size: 14px;
+    &:hover{
+        background-color: $rgba-green-10;
+        border-radius: 8px;
+    }
+   }
+  }
+}
+
+.nav-bar-bottom-btn{
+    position: relative;
+    font-size: $base-font--small;
+    button{
+        &:hover{
+            background-color: $rgba-green-10;
+            border-radius: 8px;
+            transition: all 0.3s ease; 
+        }
+    }
+    &__icon{
+        color: $color-black;
+        background-color: $color-white;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+    }
+    &__name, &__email {
+        font-family: $font-family--primary;
+        text-align: left;
+    }
+    &__name{
+        line-height: 1;
+    }
+    &__email {
+        color: $color-primary;
+        font-size: 12px;
+    }
+
+}
+
+//Side Bar Bottom Drop-Down Menu
+.dd-btn-menu{
+    position: absolute;
+    background-color: $rgba-green-10;
+   &__item{
+    color: $color-white;
+    a{
+    &:hover{
+        background-color: $color-green;
+        overflow: hidden;
+    }
+   }
+  }
+}
